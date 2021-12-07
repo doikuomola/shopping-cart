@@ -1,0 +1,27 @@
+{
+  "name": "mern-ecommerce",
+  "version": "1",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "cd frontend && yarn start",
+    "dev": "concurrently \"yarn server\" \"yarn client\"",
+    "data:import": "node backend/seederScript.js"
+  },
+  "author": "david",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "concurrently": "^6.4.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.14",
+    "nodemon": "^2.0.15",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "5.1",
+    "redux": "^4.1.2",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.1"
+  }
+}
